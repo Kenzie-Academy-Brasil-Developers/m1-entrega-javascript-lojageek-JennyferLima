@@ -2,11 +2,11 @@ let listFigure = []
 let listPainting = []
 
 
-function createActionItem(img, name, value) {
+function createActionItem(img, name, preco) {
     let item = {
         imagem: img,
         nome: name,
-        valor: value
+        valor: preco
     }
     listFigure.push(item)
     return listFigure
@@ -22,11 +22,11 @@ for(let i = 0; i < 3; i++){
     createActionItem('./assets/img/sem imagem.jpg','Nome do item','Valor do item')
 }
 
-function createPaintingItem(img, name, value) {
+function createPaintingItem(img, name, preco) {
     let item = {
         imagem: img,
         nome: name,
-        valor: value
+        valor: preco
     }
     listPainting.push(item)
     return listPainting
